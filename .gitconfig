@@ -1,0 +1,26 @@
+[user]
+	name = singjie
+	email = singjie@singjie.com
+[color]
+	diff = true
+        ui = true
+[alias]
+        st = status
+        co = checkout
+        ci = commit
+        br = branch
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
+[merge]
+  # add summary to merge commit message (eg. when merging master->staging)
+  summary = true
+
+[push]
+  default = current
+
+[branch "master"]
+  rebase = true
+[core]
+	autocrlf = input
+[credential]
+	helper = osxkeychain
